@@ -8,10 +8,10 @@
 */
 
 :root {
-	--button-color-rgb: #47D3E5;
-	--button-color-active-rgb: #1ebdd1;
-	--button-color-rgba: rgba(71, 211, 229, 0.2);
-	--button-color-rgba2: rgba(71, 211, 229, 0.1);
+	--button-color-rgb: #c27bf5;
+	--button-color-active-rgb: #b573e5;
+	--button-color-rgba: rgba(194, 123, 245,0.2);
+	--button-color-rgba2: rgba(194, 123, 245,0.1);
 }
 
 html, body, div, span, applet, object,
@@ -48,7 +48,7 @@ blockquote, q {
 	quotes: none;
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
+	blockquote::before, blockquote:after, q::before, q:after {
 		content: '';
 		content: none;
 	}
@@ -101,7 +101,7 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
-	*, *:before, *:after {
+	*, *::before, *:after {
 		box-sizing: inherit;
 	}
 
@@ -109,7 +109,7 @@ input, select, textarea {
 		background: #ffffff;
 	}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		body.is-preload *, body.is-preload *::before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -164,7 +164,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: Helvetica, Arial, sans-serif;
 		font-size: 1rem;
 		font-weight: 300;
 		line-height: 1.65;
@@ -2127,11 +2127,11 @@ input, select, textarea {
 		overflow: hidden;
 	}
 
-		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
-		input[type="button"].icon:before,
-		button.icon:before,
-		.button.icon:before {
+		input[type="submit"].icon::before,
+		input[type="reset"].icon::before,
+		input[type="button"].icon::before,
+		button.icon::before,
+		.button.icon::before {
 			margin-right: 0.5rem;
 		}
 
@@ -2421,8 +2421,8 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
+			input[type="checkbox"] + label::before,
+			input[type="radio"] + label::before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
 				display: inline-block;
@@ -2431,12 +2431,12 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: 'Font Awesome 5 Free'; /*Check symbol*/
 				font-weight: 900;
 			}
 
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
+			input[type="checkbox"] + label::before,
+			input[type="radio"] + label::before {
 				border-radius: 4px;
 				border: solid 1px;
 				content: '';
@@ -2451,16 +2451,16 @@ input, select, textarea {
 				width: 1.65rem;
 			}
 
-		input[type="checkbox"]:checked + label:before,
-		input[type="radio"]:checked + label:before {
+		input[type="checkbox"]:checked + label::before,
+		input[type="radio"]:checked + label::before {
 			content: '\f00c';
 		}
 
-	input[type="checkbox"] + label:before {
+	input[type="checkbox"] + label::before {
 		border-radius: 4px;
 	}
 
-	input[type="radio"] + label:before {
+	input[type="radio"] + label::before {
 		border-radius: 100%;
 	}
 
@@ -2521,20 +2521,20 @@ input, select, textarea {
 		color: #000000;
 	}
 
-		input[type="checkbox"] + label:before,
-		input[type="radio"] + label:before {
+		input[type="checkbox"] + label::before,
+		input[type="radio"] + label::before {
 			border-color: rgba(0, 0, 0, 0.2);
 		}
 
-	input[type="checkbox"]:checked + label:before,
-	input[type="radio"]:checked + label:before {
+	input[type="checkbox"]:checked + label::before,
+	input[type="radio"]:checked + label::before {
 		background-color: #000000;
 		border-color: #000000;
 		color: #ffffff;
 	}
 
-	input[type="checkbox"]:focus + label:before,
-	input[type="radio"]:focus + label:before {
+	input[type="checkbox"]:focus + label::before,
+	input[type="radio"]:focus + label::before {
 		border-color: var(--button-color-rgb);
 		box-shadow: 0 0 0 1px var(--button-color-rgb);
 	}
@@ -2564,7 +2564,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
-		.icon:before {
+		.icon::before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			display: inline-block;
@@ -2573,7 +2573,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: 'Font Awesome 5 Free'; /* Social Media Icons??? .icon.brands::before has this? */
 			font-weight: 400;
 		}
 
@@ -2581,19 +2581,19 @@ input, select, textarea {
 			display: none;
 		}
 
-		.icon:before {
+		.icon::before {
 			line-height: inherit;
 		}
 
-		.icon.solid:before {
+		.icon.solid::before {
 			font-weight: 900;
 		}
 
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+		.icon.brands::before {
+			font-family: 'Font Awesome 5 Brands'; /* Social Media Icons */
 		}
 
-		.icon.style2:before {
+		.icon.style2::before {
 			border-radius: 2.75em;
 			display: inline-block;
 			height: 2.75em;
@@ -2606,27 +2606,27 @@ input, select, textarea {
 			margin: 0 0 1rem 0;
 		}
 
-			.icon.major:before {
+			.icon.major::before {
 				font-size: 1.25rem;
 			}
 
-	a.icon.style2:before {
+	a.icon.style2::before {
 		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 	}
 
-	.icon.style2:before {
+	.icon.style2::before {
 		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
 	}
 
-	a.icon.style2:hover:before {
+	a.icon.style2:hover::before {
 		box-shadow: inset 0 0 0 1px var(--button-color-rgb);
 		color: var(--button-color-rgb);
 	}
 
-	a.icon.style2:active:before {
+	a.icon.style2:active::before {
 		background-color: var(--button-color-rgba2);
 		box-shadow: inset 0 0 0 1px var(--button-color-rgb);
 		color: var(--button-color-rgb);
@@ -2870,11 +2870,11 @@ input, select, textarea {
 						width: 100%;
 					}
 
-						ul.actions:not(.fixed) li input[type="submit"].icon:before,
-						ul.actions:not(.fixed) li input[type="reset"].icon:before,
-						ul.actions:not(.fixed) li input[type="button"].icon:before,
-						ul.actions:not(.fixed) li button.icon:before,
-						ul.actions:not(.fixed) li .button.icon:before {
+						ul.actions:not(.fixed) li input[type="submit"].icon::before,
+						ul.actions:not(.fixed) li input[type="reset"].icon::before,
+						ul.actions:not(.fixed) li input[type="button"].icon::before,
+						ul.actions:not(.fixed) li button.icon::before,
+						ul.actions:not(.fixed) li .button.icon::before {
 							margin-left: -0.5rem;
 						}
 
@@ -4069,7 +4069,7 @@ input, select, textarea {
 				border-radius: 0;
 			}
 
-			.banner.style4 .image:before {
+			.banner.style4 .image::before {
 				content: '';
 				display: block;
 				background-position: center;
@@ -4087,7 +4087,7 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-			.banner.style4 .image:before {
+			.banner.style4 .image::before {
 				height: 2.5rem;
 				background-size: 64px 32px;
 				margin-top: -2.5rem;
@@ -4130,7 +4130,7 @@ input, select, textarea {
 					margin-bottom: 4.625rem;
 				}
 
-					.banner.style4 .image:before {
+					.banner.style4 .image::before {
 						height: 2.1875rem;
 						background-size: 56px 28px;
 						margin-top: -2.1875rem;
@@ -4163,7 +4163,7 @@ input, select, textarea {
 					margin-bottom: 3.875rem;
 				}
 
-					.banner.style4 .image:before {
+					.banner.style4 .image::before {
 						height: 1.5625rem;
 						background-size: 40px 20px;
 						margin-top: -1.5625rem;
@@ -4397,7 +4397,7 @@ input, select, textarea {
 		border-width: 0;
 	}
 
-		.banner.style4 .image:before {
+		.banner.style4 .image::before {
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='32px' viewBox='0 0 64 32' zoomAndPan='disable'%3E%3Cstyle%3Erect %7Bfill: transparent%3B stroke: rgba(0, 0, 0, 0.2)%3B stroke-width: 1px%3B %7D%3C/style%3E%3Crect rx='4' ry='4' x='11' y='12' width='42' height='8' vector-effect='non-scaling-stroke' /%3E%3C/svg%3E");
 			border-color: rgba(0, 0, 0, 0.2);
 			width: 100%;
@@ -4419,7 +4419,7 @@ input, select, textarea {
 		border-width: 1px;
 	}
 
-		.banner.style4.invert .image:before {
+		.banner.style4.invert .image::before {
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='32px' viewBox='0 0 64 32' zoomAndPan='disable'%3E%3Cstyle%3Erect %7Bfill: transparent%3B stroke: white%3B stroke-width: 1px%3B %7D%3C/style%3E%3Crect rx='4' ry='4' x='11' y='12' width='42' height='8' vector-effect='non-scaling-stroke' /%3E%3C/svg%3E");
 			border-color: white;
 			width: calc(100% + 2px);
@@ -5272,7 +5272,7 @@ input, select, textarea {
 				border-radius: 0;
 			}
 
-			.spotlight.style3 .image:before {
+			.spotlight.style3 .image::before {
 				content: '';
 				display: block;
 				background-position: center;
@@ -5290,7 +5290,7 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-			.spotlight.style3 .image:before {
+			.spotlight.style3 .image::before {
 				height: 2.5rem;
 				background-size: 64px 32px;
 				margin-top: -2.5rem;
@@ -5333,7 +5333,7 @@ input, select, textarea {
 					margin-bottom: 4.625rem;
 				}
 
-					.spotlight.style3 .image:before {
+					.spotlight.style3 .image::before {
 						height: 2.1875rem;
 						background-size: 56px 28px;
 						margin-top: -2.1875rem;
@@ -5366,7 +5366,7 @@ input, select, textarea {
 					margin-bottom: 3.875rem;
 				}
 
-					.spotlight.style3 .image:before {
+					.spotlight.style3 .image::before {
 						height: 1.5625rem;
 						background-size: 40px 20px;
 						margin-top: -1.5625rem;
@@ -5820,7 +5820,7 @@ input, select, textarea {
 		border-width: 0;
 	}
 
-		.spotlight.style3 .image:before {
+		.spotlight.style3 .image::before {
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='32px' viewBox='0 0 64 32' zoomAndPan='disable'%3E%3Cstyle%3Erect %7Bfill: transparent%3B stroke: rgba(0, 0, 0, 0.2)%3B stroke-width: 1px%3B %7D%3C/style%3E%3Crect rx='4' ry='4' x='11' y='12' width='42' height='8' vector-effect='non-scaling-stroke' /%3E%3C/svg%3E");
 			border-color: rgba(0, 0, 0, 0.2);
 			width: 100%;
@@ -5842,7 +5842,7 @@ input, select, textarea {
 		border-width: 1px;
 	}
 
-		.spotlight.style3.invert .image:before {
+		.spotlight.style3.invert .image::before {
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='32px' viewBox='0 0 64 32' zoomAndPan='disable'%3E%3Cstyle%3Erect %7Bfill: transparent%3B stroke: white%3B stroke-width: 1px%3B %7D%3C/style%3E%3Crect rx='4' ry='4' x='11' y='12' width='42' height='8' vector-effect='non-scaling-stroke' /%3E%3C/svg%3E");
 			border-color: white;
 			width: calc(100% + 2px);
@@ -6807,7 +6807,7 @@ input, select, textarea {
 			z-index: 2;
 		}
 
-			.gallery.style2 > .forward:before, .gallery.style2 > .backward:before {
+			.gallery.style2 > .forward::before, .gallery.style2 > .backward::before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
 				display: inline-block;
@@ -6816,11 +6816,11 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: 'Font Awesome 5 Free'; /*Left and Right Chevrons*/
 				font-weight: 900;
 			}
 
-			.gallery.style2 > .forward:before, .gallery.style2 > .backward:before {
+			.gallery.style2 > .forward::before, .gallery.style2 > .backward::before {
 				display: block;
 				top: calc(50% - 1.5rem);
 				width: 4rem;
@@ -6840,7 +6840,7 @@ input, select, textarea {
 			background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25) 15%, rgba(0, 0, 0, 0));
 		}
 
-			.gallery.style2 > .forward:before {
+			.gallery.style2 > .forward::before {
 				content: '\f105';
 				right: 0;
 			}
@@ -6850,7 +6850,7 @@ input, select, textarea {
 			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25) 15%, rgba(0, 0, 0, 0));
 		}
 
-			.gallery.style2 > .backward:before {
+			.gallery.style2 > .backward::before {
 				content: '\f104';
 				left: 0;
 			}
@@ -7112,7 +7112,7 @@ input, select, textarea {
 		z-index: 0;
 	}
 
-		.gallery.lightbox .modal:before {
+		.gallery.lightbox .modal::before {
 			-moz-animation: gallery-modal-spinner 1s infinite linear;
 			-webkit-animation: gallery-modal-spinner 1s infinite linear;
 			-ms-animation: gallery-modal-spinner 1s infinite linear;
@@ -7181,7 +7181,7 @@ input, select, textarea {
 			z-index: 10001;
 		}
 
-			.gallery.lightbox .modal.visible:before {
+			.gallery.lightbox .modal.visible::before {
 				opacity: 1;
 			}
 
@@ -7197,7 +7197,7 @@ input, select, textarea {
 			opacity: 1;
 		}
 
-		.gallery.lightbox .modal.loaded:before {
+		.gallery.lightbox .modal.loaded::before {
 			-moz-transition-delay: 0s;
 			-webkit-transition-delay: 0s;
 			-ms-transition-delay: 0s;
@@ -8400,20 +8400,20 @@ input, select, textarea {
 				color: #ffffff;
 			}
 
-				#wrapper > .invert input[type="checkbox"] + label:before,
-				#wrapper > .invert input[type="radio"] + label:before {
+				#wrapper > .invert input[type="checkbox"] + label::before,
+				#wrapper > .invert input[type="radio"] + label::before {
 					border-color: white;
 				}
 
-			#wrapper > .invert input[type="checkbox"]:checked + label:before,
-			#wrapper > .invert input[type="radio"]:checked + label:before {
+			#wrapper > .invert input[type="checkbox"]:checked + label::before,
+			#wrapper > .invert input[type="radio"]:checked + label::before {
 				background-color: #ffffff;
 				border-color: #ffffff;
 				color: #000000;
 			}
 
-			#wrapper > .invert input[type="checkbox"]:focus + label:before,
-			#wrapper > .invert input[type="radio"]:focus + label:before {
+			#wrapper > .invert input[type="checkbox"]:focus + label::before,
+			#wrapper > .invert input[type="radio"]:focus + label::before {
 				border-color: var(--button-color-rgb);
 				box-shadow: 0 0 0 1px var(--button-color-rgb);
 			}
@@ -8434,16 +8434,16 @@ input, select, textarea {
 				color: #ffffff !important;
 			}
 
-			#wrapper > .invert .icon.style2:before {
+			#wrapper > .invert .icon.style2::before {
 				box-shadow: inset 0 0 0 1px white;
 			}
 
-			#wrapper > .invert a.icon.style2:hover:before {
+			#wrapper > .invert a.icon.style2:hover::before {
 				box-shadow: inset 0 0 0 1px var(--button-color-rgb);
 				color: var(--button-color-rgb);
 			}
 
-			#wrapper > .invert a.icon.style2:active:before {
+			#wrapper > .invert a.icon.style2:active::before {
 				background-color: var(--button-color-rgba2);
 				box-shadow: inset 0 0 0 1px var(--button-color-rgb);
 				color: var(--button-color-rgb);
@@ -8499,7 +8499,7 @@ input, select, textarea {
 				border-width: 1px;
 			}
 
-				#wrapper > .invert .banner.style4 .image:before {
+				#wrapper > .invert .banner.style4 .image::before {
 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='32px' viewBox='0 0 64 32' zoomAndPan='disable'%3E%3Cstyle%3Erect %7Bfill: transparent%3B stroke: white%3B stroke-width: 1px%3B %7D%3C/style%3E%3Crect rx='4' ry='4' x='11' y='12' width='42' height='8' vector-effect='non-scaling-stroke' /%3E%3C/svg%3E");
 					border-color: white;
 					width: calc(100% + 2px);
@@ -8527,7 +8527,7 @@ input, select, textarea {
 				border-width: 1px;
 			}
 
-				#wrapper > .invert .spotlight.style3 .image:before {
+				#wrapper > .invert .spotlight.style3 .image::before {
 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='32px' viewBox='0 0 64 32' zoomAndPan='disable'%3E%3Cstyle%3Erect %7Bfill: transparent%3B stroke: white%3B stroke-width: 1px%3B %7D%3C/style%3E%3Crect rx='4' ry='4' x='11' y='12' width='42' height='8' vector-effect='non-scaling-stroke' /%3E%3C/svg%3E");
 					border-color: white;
 					width: calc(100% + 2px);
