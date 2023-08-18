@@ -10,24 +10,13 @@ can be endlessly duplicated and tweaked into whatever you need to tell your stor
 without, in many cases, touching *any* CSS. Check out index-demo.html for an interactive
 demo, and index.html for the actual template. Enjoy!
 
-Demo images** courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-PS: Delete index-demo.html and assets/js/demo.js when you're done messing with the demo
-as neither are needed in production :)
-
 (* = my other side project -- carrd.co)
-(** = not included)
 
 AJ
 aj@lkn.io | @ajlkn
 
 
 Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
 	Icons:
 		Font Awesome (fontawesome.io)
 
