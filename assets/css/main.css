@@ -5813,6 +5813,10 @@ input, select, textarea {
 		background-color: rgba(255, 255, 255, 0.125);
 	}
 
+	.spotlight.invert .image.box {
+		background-color: white;
+	}
+
 	.spotlight.style3 .image {
 		border-color: rgba(0, 0, 0, 0.2);
 		background-color: rgba(0, 0, 0, 0.2);
