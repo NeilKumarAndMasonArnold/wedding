@@ -1,26 +1,28 @@
-Story by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
-
-Say hello to Story, a brand new responsive one-pager for HTML5 UP! Inspired by my work
-on Carrd*, Story is built to be extremely modular and tweakable, and as such is entirely
-built on reusable, insanely customizable elements (like "spotlight" and "gallery") that
-can be endlessly duplicated and tweaked into whatever you need to tell your story --
-without, in many cases, touching *any* CSS. Check out index-demo.html for an interactive
-demo, and index.html for the actual template. Enjoy!
-
-(* = my other side project -- carrd.co)
-
-AJ
-aj@lkn.io | @ajlkn
-
+This is a website that I've made for my finacée and myself.  So far we plan to use mostly as a directory but we may try to incorporate other helful features like digital RSVPs.
 
 Credits:
+	Generative AI Contributions:
+		ChatGPT model GPT-4 (https://chat.openai.com/?model=gpt-4) was used to write some of this site's code and content.
+		BingChat (https://chat.bing.com) was used to write some of this site's code.
+
+	Template:
+		Story by HTML5 UP
+		- Title: Story
+		- Author: AJ (aj@lkn.io | @ajlkn)
+		- Source: https://html5up.net/story/download
+		- License: CCA 3.0 (html5up.net/license)
+
 	Icons:
-		Font Awesome (fontawesome.io)
+		Font Awesome (https://fontawesome.com)
+
+	Favicon:
+		This favicon was generated using the following graphics from Twitter Twemoji:
+		- Title: 2764.svg
+		- Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
+		- Source: https://github.com/twitter/twemoji/blob/master/assets/svg/2764.svg
+		- License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0)
 
 	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+		jQuery (https://jquery.com)
+		Scrollex (https://github.com/ajlkn/jquery.scrollex)
+		Responsive Tools (https://github.com/ajlkn/responsive-tools)
