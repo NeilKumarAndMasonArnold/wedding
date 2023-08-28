@@ -3085,8 +3085,13 @@ input, select, textarea {
 			border: 0;
 			display: inline-block;
 			padding: 0 1em;
+			color: white;
 		}
 
+			#header nav a:hover {
+				color: var(--button-color-active-rgb);
+			}
+			
 			#header nav a:before {
 				float: right;
 				margin-left: 0.75em;
