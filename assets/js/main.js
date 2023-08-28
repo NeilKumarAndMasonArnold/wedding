@@ -30,8 +30,7 @@
 		});
 
 	// Header.
-	if ($banner.length > 0
-		&&	$header.hasClass('alt')) {
+		if ($banner.length > 0 && $header.hasClass('alt')) {
 
 			$window.on('resize', function() { $window.trigger('scroll'); });
 
