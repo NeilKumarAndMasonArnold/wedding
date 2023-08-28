@@ -9,7 +9,11 @@
 	--button-color-active-rgb: #b573e5;
 	--button-color-rgba: rgba(194, 123, 245,0.2);
 	--button-color-rgba2: rgba(194, 123, 245,0.1);
+	
+	--menu-overlay-rgba: rgba(126, 80, 160, 0.5);
 	--menu-blur-amount: 3px;
+	--menu-background-color-rgb: #000000;
+	--menu-links-color-rgb: #ffffff;
 }
 
 html, body, div, span, applet, object,
@@ -3229,7 +3233,7 @@ input, select, textarea {
 		-ms-user-select: none;
 		user-select: none;
 		-webkit-tap-highlight-color: black;
-		background: rgba(46, 49, 65, 0.8);
+		background: var(--menu-overlay-rgba);
 		cursor: default;
 		height: 100%;
 		left: 0;
@@ -3252,7 +3256,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #4c5c96;
+			background: var(--menu-background-color-rgb);
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3262,6 +3266,7 @@ input, select, textarea {
 		}
 
 		#menu h2 {
+			color: var(--menu-links-color-rgb);
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 			padding-bottom: 1em;
 		}
@@ -3306,6 +3311,7 @@ input, select, textarea {
 					padding: 0.75em 0;
 					text-transform: uppercase;
 					text-decoration: none;
+					color: var(--menu-links-color-rgb);
 				}
 
 					#menu .links li a:hover {
