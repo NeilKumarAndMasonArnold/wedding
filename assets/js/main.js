@@ -299,9 +299,6 @@
 				.css('overflow-x', browser.mobile ? 'scroll' : 'hidden')
 				.scrollLeft(0);
 
-		// Style #1.
-			// ...
-
 		// Style #2.
 			$('.gallery')
 				.on('wheel', '.inner', function(event) {
