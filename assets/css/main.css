@@ -9,6 +9,7 @@
 	--button-color-active-rgb: #b573e5;
 	--button-color-rgba: rgba(194, 123, 245,0.2);
 	--button-color-rgba2: rgba(194, 123, 245,0.1);
+	--menu-blur-amount: 3px;
 }
 
 html, body, div, span, applet, object,
