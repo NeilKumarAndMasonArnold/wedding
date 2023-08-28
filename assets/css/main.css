@@ -3228,7 +3228,7 @@ input, select, textarea {
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		-webkit-tap-highlight-color: black;
 		background: rgba(46, 49, 65, 0.8);
 		cursor: default;
 		height: 100%;
