@@ -57,7 +57,7 @@
 
 			window.setTimeout(function() {
 				$menu._locked = false;
-			}, 1);
+			}, 350);
 
 			return true;
 
@@ -120,7 +120,19 @@
 
 					// Redirect.
 						window.setTimeout(function() {
-							window.location.href = href;
+							// window.location.href = href;
+							// $(`a[href="${href}"].smooth-scroll-middle, a[href="${href}"].smooth-scroll`).click();
+
+							// Check if the link has the class 'smooth-scroll-middle'
+							if ($(event.target).hasClass('smooth-scroll-middle')) {
+								// Calculate the target scroll position for 'middle'
+								var yPos = target.offset().top - (e(window).height() - target.outerHeight()) / 2;
+								$('body,html').animate({ scrollTop: yPos }, 1000);
+							} else {
+								// Calculate the target scroll position for 'top'
+								var yPos = Math.max(target.offset().top, 0);
+								$('body,html').animate({ scrollTop: yPos }, 1000);
+							}
 						}, 350);
 
 				});
