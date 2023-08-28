@@ -14,6 +14,9 @@
 	--menu-blur-amount: 3px;
 	--menu-background-color-rgb: #000000;
 	--menu-links-color-rgb: #ffffff;
+	--menu-button-rgba: rgba(194, 123, 245, 0.5);
+
+	--header-background-color-rgba: rgba(0, 0, 0, 0.95);
 }
 
 html, body, div, span, applet, object,
@@ -3046,7 +3049,12 @@ input, select, textarea {
 	-webkit-transition: background-color 0.2s ease-in-out;
 	-ms-transition: background-color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out;
-	background-color: rgba(53, 56, 73, 0.95);
+	background-color: var(--header-background-color-rgba);
+	-moz-transition: border-bottom 0.2s ease-in-out;
+	-webkit-transition: border-bottom 0.2s ease-in-out;
+	-ms-transition: border-bottom 0.2s ease-in-out;
+	transition: border-bottom 0.2s ease-in-out;
+	border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 	height: 3.5rem;
 	left: 0;
 	line-height: 3.5rem;
@@ -3062,11 +3070,13 @@ input, select, textarea {
 		-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
 		-ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
 		transition: opacity 0.2s ease-in-out, visibility 0.2s;
-		border-bottom: 0;
-		font-size: 0.8em;
 		margin-bottom: 0;
+		color: var(--menu-links-color-rgb);
 		opacity: 1;
 		visibility: visible;
+
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 2.25rem;
 	}
 
 		#header h1 a {
@@ -3141,6 +3151,7 @@ input, select, textarea {
 
 	#header.alt {
 		background-color: transparent;
+		border-bottom: solid 2px rgba(255, 255, 255, 0);
 	}
 
 		#header.alt h1 {
@@ -3315,7 +3326,7 @@ input, select, textarea {
 				}
 
 					#menu .links li a:hover {
-						background: #45558d;
+						background: var(--menu-button-rgba);
 					}
 
 		@media screen and (max-width: 736px) {
@@ -8607,7 +8618,7 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 0 0 2.25em 0 ;
-			background-color: #2e3141;
+			background-color: var(--header-background-color-rgba);
 			background-size: auto, cover;
 			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
