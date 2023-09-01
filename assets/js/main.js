@@ -1,9 +1,3 @@
-/*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	var	$window = $(window),
@@ -443,7 +437,7 @@
 							$modal.trigger('click');
 
 				})
-				.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>')
+				.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" alt="Focused Image" /></div></div>')
 					.find('img')
 						.on('load', function(event) {
 
