@@ -5,20 +5,30 @@
 */
 
 :root {
-	--button-color-rgb: #c27bf5;
-	--button-color-active-rgb: #b573e5;
-	--button-color-rgba: rgba(194, 123, 245,0.2);
-	--button-color-rgba2: rgba(194, 123, 245,0.1);
+	/* --button-color-rgb: #c27bf5; */
+	/* --button-color-active-rgb: #b573e5; */
+	/* --button-color-rgba: rgba(194, 123, 245,0.2); */
+	/* --button-color-rgba2: rgba(194, 123, 245,0.1); */
 	
-	--menu-overlay-rgba: rgba(126, 80, 160, 0.5);
+	/* --menu-overlay-rgba: rgba(126, 80, 160, 0.5); */
 	--menu-blur-amount: 3px;
 	--menu-background-color-rgb: #000000;
 	--menu-links-color-rgb: #ffffff;
-	--menu-button-rgba: rgba(194, 123, 245, 0.5);
-
-	--spotlight-overlay-rgba: rgba(126, 80, 160, 0.5);
-
+	/* --menu-button-rgba: rgba(194, 123, 245, 0.5); */
+	
+	/* --spotlight-overlay-rgba: rgba(126, 80, 160, 0.5); */
+	
 	--header-background-color-rgba: rgba(0, 0, 0, 0.95);
+	
+	--button-color-rgb: rgb(182, 143, 49);
+	--button-color-active-rgb: rgb(169, 135, 33);
+	--button-color-rgba: rgb(182, 143, 49, 0.2);
+	--button-color-rgba: rgb(182, 143, 49, 0.1);
+	
+	--menu-overlay-rgba: rgba(114, 100, 0, 0.5);
+	--menu-button-rgba: rgb(182, 143, 49, 0.5);
+
+	--spotlight-overlay-rgba: rgba(114, 100, 0, 0.5);
 }
 
 html, body, div, span, applet, object,
